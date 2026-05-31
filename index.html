@@ -3,391 +3,542 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Baptism Invitation | Vinsen Vindhu Varkichen</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-font-family:'Cormorant Garamond',serif;
-background:#fcf7ec;
-color:#3a2a0c;
-overflow-x:hidden;
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background: #fcf7ec;
+    color: #3a2a0c;
+    overflow-x: hidden;
 }
 
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-pointer-events:none;
-background:
-radial-gradient(circle at 20% 20%,rgba(255,215,0,.15),transparent 20%),
-radial-gradient(circle at 80% 40%,rgba(255,215,0,.12),transparent 25%),
-radial-gradient(circle at 50% 90%,rgba(255,215,0,.10),transparent 20%);
-z-index:-1;
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,215,0,.15), transparent 20%),
+        radial-gradient(circle at 80% 40%, rgba(255,215,0,.12), transparent 25%),
+        radial-gradient(circle at 50% 90%, rgba(255,215,0,.10), transparent 20%);
+
+    z-index: -1;
 }
 
-#welcomeScreen{
-position:fixed;
-inset:0;
-background:linear-gradient(180deg,#fff8df,#f5e3b0);
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:9999;
-padding:20px;
+/* Welcome Screen */
+
+#welcomeScreen {
+    position: fixed;
+    inset: 0;
+
+    background: linear-gradient(180deg, #fff8df, #f5e3b0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+    padding: 20px;
 }
 
-.welcome-content{
-text-align:center;
-max-width:500px;
+.welcome-content {
+    text-align: center;
+    max-width: 500px;
 }
 
-.welcome-content h1{
-font-family:'Great Vibes',cursive;
-font-size:4rem;
-color:#b8860b;
-margin-bottom:15px;
+.welcome-content h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #b8860b;
+    margin-bottom: 15px;
 }
 
-.welcome-content p{
-font-size:1.3rem;
-margin-bottom:30px;
+.welcome-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
 }
 
-.open-btn{
-padding:16px 40px;
-border:none;
-border-radius:50px;
-background:#b8860b;
-color:white;
-font-size:1.1rem;
-cursor:pointer;
+.open-btn {
+    padding: 16px 40px;
+    border: none;
+    border-radius: 50px;
+
+    background: #b8860b;
+    color: white;
+
+    font-size: 1.1rem;
+    cursor: pointer;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,.18);
 }
 
-.hero{
-padding:70px 20px;
-text-align:center;
+.open-btn:hover {
+    background: #9d7208;
 }
 
-.hero h1{
-font-family:'Great Vibes',cursive;
-font-size:5rem;
-color:#b8860b;
+/* Hero */
+
+.hero {
+    padding: 70px 20px;
+    text-align: center;
 }
 
-.hero p{
-font-size:1.4rem;
-margin-top:10px;
+.hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+    color: #b8860b;
 }
 
-.hero .name{
-font-size:3rem;
-font-weight:700;
-margin-top:20px;
+.hero p {
+    font-size: 1.4rem;
+    margin-top: 10px;
 }
 
-.section{
-padding:60px 20px;
-max-width:1200px;
-margin:auto;
+.hero .name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 20px;
 }
 
-.section-title{
-text-align:center;
-font-size:2.8rem;
-color:#b8860b;
-margin-bottom:35px;
+/* Sections */
+
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.slideshow{
-max-width:850px;
-margin:auto;
-position:relative;
-overflow:hidden;
-border-radius:25px;
-box-shadow:0 10px 35px rgba(0,0,0,.15);
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #b8860b;
+    margin-bottom: 35px;
 }
 
-.slideshow img{
-width:100%;
-display:block;
-transition:opacity .8s ease;
+/* Slideshow */
+
+.slideshow {
+    max-width: 850px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.15);
+
+    background: #f5ecd5;
 }
 
-.countdown{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:15px;
+.slideshow img {
+    width: 100%;
+    display: block;
+    transition: opacity .8s ease;
 }
 
-.time-box{
-background:#b8860b;
-color:white;
-padding:20px;
-border-radius:15px;
-width:110px;
-text-align:center;
+/* Countdown */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.time-box span{
-font-size:2rem;
-font-weight:bold;
-display:block;
+.time-box {
+    background: #b8860b;
+    color: white;
+
+    padding: 20px;
+    border-radius: 15px;
+    width: 110px;
+
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0,0,0,.14);
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.time-box span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
 }
 
-.card{
-background:white;
-padding:30px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
 }
 
-.card h3{
-color:#b8860b;
-margin-bottom:15px;
+.card {
+    background: white;
+
+    padding: 30px;
+    border-radius: 20px;
+
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
-.map-btn{
-display:inline-block;
-margin-top:15px;
-padding:12px 24px;
-background:#b8860b;
-color:white;
-text-decoration:none;
-border-radius:30px;
+.card h3 {
+    color: #b8860b;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
-.blessing{
-max-width:700px;
-margin:auto;
-text-align:center;
-font-size:1.4rem;
-font-style:italic;
-line-height:1.8;
+.card h2 {
+    margin-bottom: 10px;
 }
 
-.footer{
-padding:60px 20px;
-text-align:center;
-background:#f5ecd5;
+.card p {
+    font-size: 1.15rem;
+    line-height: 1.5;
 }
 
-.footer h2{
-font-family:'Great Vibes',cursive;
-font-size:3.5rem;
-color:#b8860b;
+.map-btn {
+    display: inline-block;
+    margin-top: 15px;
+
+    padding: 12px 24px;
+
+    background: #b8860b;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 30px;
 }
 
-.footer p{
-font-size:1.8rem;
-margin-top:10px;
+.map-btn:hover {
+    background: #9d7208;
 }
 
-@media(max-width:768px){
+/* Blessing */
 
-.hero h1{
-font-size:3.5rem;
+.blessing {
+    max-width: 700px;
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.8;
 }
 
-.hero .name{
-font-size:2.2rem;
+/* Footer */
+
+.footer {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f5ecd5;
 }
 
-.welcome-content h1{
-font-size:3rem;
+.footer h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #b8860b;
 }
 
-.section-title{
-font-size:2.2rem;
+.footer p {
+    font-size: 1.8rem;
+    margin-top: 10px;
 }
 
-.time-box{
-width:90px;
-}
+/* Mobile */
+
+@media(max-width:768px) {
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero .name {
+        font-size: 2.2rem;
+    }
+
+    .welcome-content h1 {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .time-box {
+        width: 90px;
+        padding: 16px 10px;
+    }
+
+    .time-box span {
+        font-size: 1.6rem;
+    }
 
 }
 
 </style>
 </head>
+
 <body>
+
+<!-- Welcome Screen -->
+
 <div id="welcomeScreen">
-<div class="welcome-content">
-<h1>Vinsen's Baptism</h1>
-<p>Join us as we celebrate this blessed occasion.</p>
-<button class="open-btn" onclick="openInvitation()">
-Open Invitation
-</button>
+    <div class="welcome-content">
+        <h1>Vinsen's Baptism</h1>
+        <p>Join us as we celebrate this blessed occasion.</p>
+
+        <button class="open-btn" onclick="openInvitation()">
+            Open Invitation
+        </button>
+    </div>
 </div>
-</div>
-<audio id="bgMusic" loop>
-<source src="music.mp3" type="audio/mpeg">
+
+<!-- Background Music -->
+
+<audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
 </audio>
+
+<!-- Hero Section -->
+
 <section class="hero">
-<h1>Baptism</h1>
-<p>of our beloved son</p>
-<div class="name">
-Vinsen Vindhu Varkichen
-</div>
-<p style="margin-top:20px;">
-July 4, 2026 • 11:00 AM
-</p>
+    <h1>Baptism</h1>
+
+    <p>of our beloved son</p>
+
+    <div class="name">
+        Vinsen Vindhu Varkichen
+    </div>
+
+    <p style="margin-top:20px;">
+        July 4, 2026 • 11:00 AM
+    </p>
 </section>
+
+<!-- Slideshow Section -->
+
 <section class="section">
-<h2 class="section-title">
-Our Little Blessing
-</h2>
-<div class="slideshow">
-<img id="slide" src="s/1.jpg" alt="Vinsen">
-</div>
+    <h2 class="section-title">
+        Our Little Blessing
+    </h2>
+
+    <div class="slideshow">
+        <img id="slide" src="photos/photo1.jpg" alt="Vinsen">
+    </div>
 </section>
+
+<!-- Countdown Section -->
+
 <section class="section">
-<h2 class="section-title">
-Countdown
-</h2>
-<div class="countdown">
-<div class="time-box">
-<span id="days">0</span>
-Days
-</div>
-<div class="time-box">
-<span id="hours">0</span>
-Hours
-</div>
-<div class="time-box">
-<span id="minutes">0</span>
-Minutes
-</div>
-<div class="time-box">
-<span id="seconds">0</span>
-Seconds
-</div>
-</div>
+    <h2 class="section-title">
+        Countdown
+    </h2>
+
+    <div class="countdown">
+
+        <div class="time-box">
+            <span id="days">0</span>
+            Days
+        </div>
+
+        <div class="time-box">
+            <span id="hours">0</span>
+            Hours
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">0</span>
+            Minutes
+        </div>
+
+        <div class="time-box">
+            <span id="seconds">0</span>
+            Seconds
+        </div>
+
+    </div>
 </section>
+
+<!-- Event Details Section -->
+
 <section class="section">
-<h2 class="section-title">
-Event Details
-</h2>
-<div class="cards">
-<div class="card">
-<h3>Date & Time</h3>
-<h2>July 4, 2026</h2>
-<p>Saturday</p>
-<p>11:00 AM</p>
-</div>
-<div class="card">
-<h3>Church</h3>
-<h2>St Mary's Forane Church</h2>
-<p>Athirampuzha (Cheriyapally)</p>
-</div>
-<div class="card">
-<h3>Reception</h3>
-<h2>Santhome Enclave</h2>
-<p>
-Opposite to St Sebastian Convention Centre A/C,
-Athirampuzha
-</p>
- Open Google Maps 
-</div>
-</div>
+    <h2 class="section-title">
+        Event Details
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Date & Time</h3>
+            <h2>July 4, 2026</h2>
+            <p>Saturday</p>
+            <p>11:00 AM</p>
+        </div>
+
+        <div class="card">
+            <h3>Church</h3>
+            <h2>St Mary's Forane Church</h2>
+            <p>Athirampuzha, Kerala</p>
+
+            <a class="map-btn"
+               href="https://www.google.com/maps/search/?api=1&query=St+Marys+Forane+Church+Athirampuzha"
+               target="_blank">
+                Open Google Maps
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Reception</h3>
+            <h2>Santhome Enclave</h2>
+
+            <p>
+                Opposite to St Sebastian Convention Centre A/C,<br>
+                Athirampuzha
+            </p>
+
+            <a class="map-btn"
+               href="https://www.google.com/maps/search/?api=1&query=Santhome+Enclave+Athirampuzha"
+               target="_blank">
+                Open Google Maps
+            </a>
+        </div>
+
+    </div>
 </section>
+
+<!-- Blessing Section -->
+
 <section class="section">
-<h2 class="section-title">
-A Blessing
-</h2>
-<div class="blessing">
-"Children are a heritage from the Lord,
-offspring a reward from Him."
-<br><br>
-Psalm 127:3
-</div>
+    <h2 class="section-title">
+        A Blessing
+    </h2>
+
+    <div class="blessing">
+        "Children are a heritage from the Lord,<br>
+        offspring a reward from Him."
+        <br><br>
+        Psalm 127:3
+    </div>
 </section>
+
+<!-- Footer -->
+
 <section class="footer">
-<h2>With Love</h2>
-<p>Joms & Vindhuja</p>
+    <h2>With Love</h2>
+    <p>Joms & Vindhuja</p>
 </section>
+
 <script>
 
-function openInvitation(){
+/* Open Invitation and Play Music */
 
-document.getElementById("welcomeScreen").style.display="none";
+function openInvitation() {
 
-const music=document.getElementById("bgMusic");
+    document.getElementById("welcomeScreen").style.display = "none";
 
-music.play().catch(()=>{});
+    const music = document.getElementById("bgMusic");
 
+    music.volume = 0.8;
+
+    music.play()
+        .then(() => {
+            console.log("Music started successfully");
+        })
+        .catch((error) => {
+            console.log("Music could not play:", error);
+            alert("Please tap once on the page if music does not start.");
+        });
 }
 
-const s=[
-"photos/photo1.jpg",
-"photos/photo2.jpg",
-"photos/photo3.jpg",
-"photos/photo5.jpg",
-"photos/photo6.jpg",
-"photos/photo7.jpg",
-"photos/photo8.jpg"
+/* Slideshow - Exactly 7 Photos */
+
+const photos = [
+    "photos/photo1.jpg",
+    "photos/photo2.jpg",
+    "photos/photo3.jpg",
+    "photos/photo4.jpg",
+    "photos/photo5.jpg",
+    "photos/photo6.jpg",
+    "photos/photo7.jpg"
 ];
 
-let current=0;
+let current = 0;
 
-setInterval(()=>{
+setInterval(() => {
 
-current=(current+1)%photos.length;
+    current = (current + 1) % photos.length;
 
-const slide=document.getElementById("slide");
+    const slide = document.getElementById("slide");
 
-slide.style.opacity=0;
+    slide.style.opacity = 0;
 
-setTimeout(()=>{
-slide.src=photos[current];
-slide.style.opacity=1;
-},500);
+    setTimeout(() => {
+        slide.src = photos[current];
+        slide.style.opacity = 1;
+    }, 500);
 
-},4000);
+}, 4000);
 
-const targetDate=
-new Date("July 4, 2026 11:00:00").getTime();
+/* Countdown */
 
-setInterval(()=>{
+const targetDate = new Date("July 4, 2026 11:00:00").getTime();
 
-const now=new Date().getTime();
+function updateCountdown() {
 
-const distance=targetDate-now;
+    const now = new Date().getTime();
 
-document.getElementById("days").innerHTML=
-Math.floor(distance/(1000*60*60*24));
+    const distance = targetDate - now;
 
-document.getElementById("hours").innerHTML=
-Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+    if (distance <= 0) {
 
-document.getElementById("minutes").innerHTML=
-Math.floor((distance%(1000*60*60))/(1000*60));
+        document.getElementById("days").innerHTML = 0;
+        document.getElementById("hours").innerHTML = 0;
+        document.getElementById("minutes").innerHTML = 0;
+        document.getElementById("seconds").innerHTML = 0;
 
-document.getElementById("seconds").innerHTML=
-Math.floor((distance%(1000*60))/1000);
+        return;
+    }
 
-},1000);
+    document.getElementById("days").innerHTML =
+        Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    document.getElementById("hours").innerHTML =
+        Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    document.getElementById("minutes").innerHTML =
+        Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    document.getElementById("seconds").innerHTML =
+        Math.floor((distance % (1000 * 60)) / 1000);
+}
+
+updateCountdown();
+
+setInterval(updateCountdown, 1000);
 
 </script>
+
 </body>
 </html>
