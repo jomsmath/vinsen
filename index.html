@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -25,25 +26,30 @@ body {
     overflow-x: hidden;
 
     background-image:
-        linear-gradient(rgba(252, 247, 236, 0.82), rgba(252, 247, 236, 0.82)),
+        linear-gradient(rgba(252, 247, 236, 0.68), rgba(252, 247, 236, 0.68)),
         url("background.png");
 
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: #fcf7ec;
 }
+
+/* Welcome Screen */
 
 #welcomeScreen {
     position: fixed;
     inset: 0;
 
     background:
-        linear-gradient(rgba(255, 248, 223, 0.86), rgba(245, 227, 176, 0.86)),
+        linear-gradient(rgba(255, 248, 223, 0.72), rgba(245, 227, 176, 0.72)),
         url("background.png");
 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff8df;
 
     display: flex;
     justify-content: center;
@@ -55,13 +61,13 @@ body {
 
 .welcome-content {
     text-align: center;
-    max-width: 500px;
+    max-width: 520px;
 
-    background: rgba(255, 255, 255, 0.65);
-    padding: 35px 25px;
+    background: rgba(255, 255, 255, 0.68);
+    padding: 38px 28px;
     border-radius: 25px;
 
-    box-shadow: 0 10px 35px rgba(0,0,0,.12);
+    box-shadow: 0 10px 35px rgba(0,0,0,.14);
 }
 
 .welcome-content h1 {
@@ -77,14 +83,14 @@ body {
 }
 
 .open-btn {
-    padding: 16px 40px;
+    padding: 16px 42px;
     border: none;
     border-radius: 50px;
 
     background: #b8860b;
     color: white;
 
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     cursor: pointer;
 
     box-shadow: 0 8px 18px rgba(0,0,0,.18);
@@ -94,52 +100,42 @@ body {
     background: #9d7208;
 }
 
-#musicBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-
-    z-index: 999;
-
-    background: #b8860b;
-    color: white;
-
-    border: none;
-    border-radius: 30px;
-
-    padding: 12px 20px;
-    font-size: 1rem;
-
-    cursor: pointer;
-    display: none;
-
-    box-shadow: 0 8px 18px rgba(0,0,0,.18);
-}
+/* Hero */
 
 .hero {
-    padding: 70px 20px;
+    padding: 75px 20px 55px;
     text-align: center;
+}
+
+.hero .welcome-line {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #5a4213;
+    margin-bottom: 5px;
 }
 
 .hero h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 5rem;
+    font-size: 5.5rem;
     color: #b8860b;
+    line-height: 1;
 }
 
 .hero p {
     font-size: 1.4rem;
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
 .hero .name {
     font-size: 3rem;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
+/* Sections */
+
 .section {
-    padding: 60px 20px;
+    padding: 55px 20px;
     max-width: 1200px;
     margin: auto;
 }
@@ -151,6 +147,8 @@ body {
     margin-bottom: 35px;
 }
 
+/* Single Photo */
+
 .single-photo-box {
     max-width: 850px;
     margin: auto;
@@ -159,7 +157,7 @@ body {
     border-radius: 25px;
     box-shadow: 0 10px 35px rgba(0,0,0,.18);
 
-    background: rgba(255,255,255,.65);
+    background: rgba(255,255,255,.72);
     padding: 10px;
 }
 
@@ -168,6 +166,8 @@ body {
     display: block;
     border-radius: 18px;
 }
+
+/* Countdown */
 
 .countdown {
     display: flex;
@@ -194,6 +194,8 @@ body {
     display: block;
 }
 
+/* Event Cards */
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -202,7 +204,7 @@ body {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.82);
+    background: rgba(255, 255, 255, 0.84);
 
     padding: 30px;
     border-radius: 20px;
@@ -228,7 +230,7 @@ body {
 
 .map-btn {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 18px;
 
     padding: 12px 24px;
 
@@ -237,33 +239,39 @@ body {
 
     text-decoration: none;
     border-radius: 30px;
+
+    box-shadow: 0 6px 14px rgba(0,0,0,.14);
 }
 
 .map-btn:hover {
     background: #9d7208;
 }
 
+/* Blessing */
+
 .blessing {
-    max-width: 700px;
+    max-width: 760px;
     margin: auto;
 
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     font-style: italic;
     line-height: 1.8;
 
-    background: rgba(255,255,255,.75);
-    padding: 30px;
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.76);
+    padding: 35px 25px;
+    border-radius: 22px;
 
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
+
+/* Footer */
 
 .footer {
     padding: 60px 20px;
     text-align: center;
 
-    background: rgba(245, 236, 213, 0.82);
+    background: rgba(245, 236, 213, 0.78);
 }
 
 .footer h2 {
@@ -277,21 +285,47 @@ body {
     margin-top: 10px;
 }
 
+/* Mobile */
+
 @media(max-width:768px) {
+
     body {
+        background-size: contain;
+        background-position: top center;
         background-attachment: scroll;
     }
 
+    #welcomeScreen {
+        background-size: contain;
+        background-position: center;
+    }
+
+    .welcome-content h1 {
+        font-size: 3rem;
+    }
+
+    .welcome-content p {
+        font-size: 1.15rem;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .hero .welcome-line {
+        font-size: 1.6rem;
+    }
+
     .hero h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     .hero .name {
         font-size: 2.2rem;
     }
 
-    .welcome-content h1 {
-        font-size: 3rem;
+    .hero p {
+        font-size: 1.2rem;
     }
 
     .section-title {
@@ -300,13 +334,22 @@ body {
 
     .time-box {
         width: 90px;
-        padding: 15px;
+        padding: 16px 10px;
     }
 
     .time-box span {
         font-size: 1.6rem;
     }
+
+    .footer h2 {
+        font-size: 3rem;
+    }
+
+    .footer p {
+        font-size: 1.5rem;
+    }
 }
+
 </style>
 </head>
 
@@ -328,12 +371,11 @@ body {
     Your browser does not support the audio element.
 </audio>
 
-<button id="musicBtn" onclick="toggleMusic()">
-    Play Music
-</button>
-
 <section class="hero">
+    <div class="welcome-line">Welcome to</div>
+
     <h1>Baptism</h1>
+
     <p>of our beloved son</p>
 
     <div class="name">
@@ -351,7 +393,7 @@ body {
     </h2>
 
     <div class="single-photo-box">
-        <img src="photos/blessing.jpg" alt="Vinsen">
+        <img src="photos/blessing.jpg" alt="Vinsen Vindhu Varkichen">
     </div>
 </section>
 
@@ -389,6 +431,7 @@ body {
     </h2>
 
     <div class="cards">
+
         <div class="card">
             <h3>Date & Time</h3>
             <h2>July 4, 2026</h2>
@@ -399,25 +442,27 @@ body {
         <div class="card">
             <h3>Church</h3>
             <h2>St Mary's Forane Church</h2>
-            <p>Athirampuzha, Cheriyapally</p>
+            <p>Athirampuzha</p>
 
-            <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=St+Marys+Forane+Church+Athirampuzha" target="_blank">
-                Open Google Maps
+            <a class="map-btn" href="https://maps.app.goo.gl/xepn4a7civ5ENGD49" target="_blank">
+                Open Church Map
             </a>
         </div>
 
         <div class="card">
             <h3>Reception</h3>
             <h2>Santhome Enclave</h2>
+
             <p>
                 Opposite to St Sebastian Convention Centre A/C,<br>
                 Athirampuzha
             </p>
 
             <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Santhome+Enclave+Athirampuzha" target="_blank">
-                Open Google Maps
+                Open Reception Map
             </a>
         </div>
+
     </div>
 </section>
 
@@ -440,41 +485,19 @@ body {
 </section>
 
 <script>
+
 function openInvitation() {
-    document.getElementById("welcomeScreen").style.display = "none";
-
+    const welcomeScreen = document.getElementById("welcomeScreen");
     const music = document.getElementById("bgMusic");
-    const musicBtn = document.getElementById("musicBtn");
 
-    music.volume = 0.8;
+    welcomeScreen.style.display = "none";
 
-    music.play()
-        .then(() => {
-            musicBtn.style.display = "block";
-            musicBtn.innerHTML = "Pause Music";
-        })
-        .catch(() => {
-            musicBtn.style.display = "block";
-            musicBtn.innerHTML = "Play Music";
-        });
-}
+    music.volume = 0.85;
+    music.currentTime = 0;
 
-function toggleMusic() {
-    const music = document.getElementById("bgMusic");
-    const musicBtn = document.getElementById("musicBtn");
-
-    if (music.paused) {
-        music.play()
-            .then(() => {
-                musicBtn.innerHTML = "Pause Music";
-            })
-            .catch(() => {
-                alert("Music could not play. Please check music.mp3 file.");
-            });
-    } else {
-        music.pause();
-        musicBtn.innerHTML = "Play Music";
-    }
+    music.play().catch(function(error) {
+        console.log("Music could not start:", error);
+    });
 }
 
 const targetDate = new Date("July 4, 2026 11:00:00").getTime();
@@ -506,6 +529,7 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
 </script>
 
 </body>
