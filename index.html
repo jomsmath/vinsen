@@ -26,11 +26,11 @@ body {
     overflow-x: hidden;
 
     background-image:
-        linear-gradient(rgba(252, 247, 236, 0.68), rgba(252, 247, 236, 0.68)),
+        linear-gradient(rgba(252, 247, 236, 0.55), rgba(252, 247, 236, 0.55)),
         url("background.png");
 
-    background-size: contain;
-    background-position: top center;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #fcf7ec;
@@ -43,11 +43,11 @@ body {
     inset: 0;
 
     background:
-        linear-gradient(rgba(255, 248, 223, 0.72), rgba(245, 227, 176, 0.72)),
+        linear-gradient(rgba(255, 248, 223, 0.60), rgba(245, 227, 176, 0.60)),
         url("background.png");
 
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     background-color: #fff8df;
 
@@ -60,47 +60,10 @@ body {
 }
 
 .welcome-content {
-    text-align: center;
-    max-width: 520px;
-
-    background: rgba(255, 255, 255, 0.68);
-    padding: 38px 28px;
-    border-radius: 25px;
-
-    box-shadow: 0 10px 35px rgba(0,0,0,.14);
+    text-align: center8;
 }
 
-.welcome-content h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 4rem;
-    color: #b8860b;
-    margin-bottom: 15px;
-}
-
-.welcome-content p {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
-}
-
-.open-btn {
-    padding: 16px 42px;
-    border: none;
-    border-radius: 50px;
-
-    background: #b8860b;
-    color: white;
-
-    font-size: 1.15rem;
-    cursor: pointer;
-
-    box-shadow: 0 8px 18px rgba(0,0,0,.18);
-}
-
-.open-btn:hover {
-    background: #9d7208;
-}
-
-/* Hero */
+/* Hero Section */
 
 .hero {
     padding: 75px 20px 55px;
@@ -157,7 +120,7 @@ body {
     border-radius: 25px;
     box-shadow: 0 10px 35px rgba(0,0,0,.18);
 
-    background: rgba(255,255,255,.72);
+    background: rgba(255,255,255,.75);
     padding: 10px;
 }
 
@@ -204,7 +167,7 @@ body {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.84);
+    background: rgba(255, 255, 255, 0.86);
 
     padding: 30px;
     border-radius: 20px;
@@ -221,6 +184,7 @@ body {
 
 .card h2 {
     margin-bottom: 10px;
+    font-size: 1.6rem;
 }
 
 .card p {
@@ -230,7 +194,7 @@ body {
 
 .map-btn {
     display: inline-block;
-    margin-top: 18px;
+    margin-top: 15px;
 
     padding: 12px 24px;
 
@@ -250,19 +214,19 @@ body {
 /* Blessing */
 
 .blessing {
-    max-width: 760px;
+    max-width: 700px;
     margin: auto;
 
     text-align: center;
-    font-size: 1.45rem;
+    font-size: 1.4rem;
     font-style: italic;
     line-height: 1.8;
 
-    background: rgba(255, 255, 255, 0.76);
+    background: rgba(255,255,255,.75);
     padding: 35px 25px;
     border-radius: 22px;
 
-    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,.10);
 }
 
 /* Footer */
@@ -271,7 +235,7 @@ body {
     padding: 60px 20px;
     text-align: center;
 
-    background: rgba(245, 236, 213, 0.78);
+    background: rgba(245, 236, 213, 0.82);
 }
 
 .footer h2 {
@@ -287,17 +251,17 @@ body {
 
 /* Mobile */
 
-@media(max-width:768px) {
+@media(max-width: 768px) {
 
     body {
-        background-size: contain;
-        background-position: top center;
         background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
     }
 
     #welcomeScreen {
-        background-size: contain;
-        background-position: center;
+        background-size: cover;
+        background-position: center center;
     }
 
     .welcome-content h1 {
@@ -309,7 +273,7 @@ body {
     }
 
     .hero {
-        padding-top: 55px;
+        padding: 55px 18px 40px;
     }
 
     .hero .welcome-line {
@@ -355,6 +319,7 @@ body {
 
 <body>
 
+<!-- Welcome Screen -->
 <div id="welcomeScreen">
     <div class="welcome-content">
         <h1>Vinsen's Baptism</h1>
@@ -366,11 +331,13 @@ body {
     </div>
 </div>
 
+<!-- Background Music -->
 <audio id="bgMusic" loop preload="auto">
     <source src="./music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
+<!-- Hero Section -->
 <section class="hero">
     <div class="welcome-line">Welcome to</div>
 
@@ -387,6 +354,7 @@ body {
     </p>
 </section>
 
+<!-- Single Photo Section -->
 <section class="section">
     <h2 class="section-title">
         Our Little Blessing
@@ -397,6 +365,7 @@ body {
     </div>
 </section>
 
+<!-- Countdown Section -->
 <section class="section">
     <h2 class="section-title">
         Countdown
@@ -425,6 +394,7 @@ body {
     </div>
 </section>
 
+<!-- Event Details Section -->
 <section class="section">
     <h2 class="section-title">
         Event Details
@@ -443,29 +413,30 @@ body {
             <h3>Church</h3>
             <h2>St Mary's Forane Church</h2>
             <p>Athirampuzha</p>
+            <p>Cheriyapally</p>
 
             <a class="map-btn" href="https://maps.app.goo.gl/xepn4a7civ5ENGD49" target="_blank">
-                Open Church Map
+                Open Google Maps
             </a>
         </div>
 
         <div class="card">
             <h3>Reception</h3>
             <h2>Santhome Enclave</h2>
-
             <p>
-                Opposite to St Sebastian Convention Centre A/C,<br>
+                Opposite to St Sebastian Convention Centre A/C,
                 Athirampuzha
             </p>
 
-            <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Santhome+Enclave+Athirampuzha" target="_blank">
-                Open Reception Map
+            <a class="map-btn" href="https://maps.app.goo.gl/BihNZrKRBfAbvtFN6" target="_blank">
+                Open Google Maps
             </a>
         </div>
 
     </div>
 </section>
 
+<!-- Blessing Section -->
 <section class="section">
     <h2 class="section-title">
         A Blessing
@@ -479,6 +450,7 @@ body {
     </div>
 </section>
 
+<!-- Footer -->
 <section class="footer">
     <h2>With Love</h2>
     <p>Joms & Vindhuja</p>
@@ -492,7 +464,7 @@ function openInvitation() {
 
     welcomeScreen.style.display = "none";
 
-    music.volume = 0.85;
+    music.volume = 0.8;
     music.currentTime = 0;
 
     music.play().catch(function(error) {
