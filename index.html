@@ -60,45 +60,120 @@ body {
 }
 
 .welcome-content {
-    text-align: center8;
+    text-align: center;
+    max-width: 520px;
+
+    background: rgba(255, 255, 255, 0.72);
+    padding: 38px 28px;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,.16);
+}
+
+.welcome-content h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #b8860b;
+    margin-bottom: 15px;
+}
+
+.welcome-content p {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.open-btn {
+    padding: 16px 42px;
+    border: none;
+    border-radius: 50px;
+
+    background: #b8860b;
+    color: white;
+
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
+
+.open-btn:hover {
+    background: #9d7208;
 }
 
 /* Hero Section */
 
 .hero {
-    padding: 75px 20px 55px;
+    padding: 80px 20px 60px;
     text-align: center;
 }
 
+.hero-content {
+    display: inline-block;
+    max-width: 900px;
+
+    background: rgba(255, 255, 255, 0.74);
+    padding: 35px 28px;
+    border-radius: 28px;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+    backdrop-filter: blur(3px);
+}
+
 .hero .welcome-line {
-    font-size: 2rem;
-    font-weight: 500;
-    color: #5a4213;
-    margin-bottom: 5px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #4a3308;
+    margin-bottom: 8px;
+
+    text-shadow: 0 2px 5px rgba(255,255,255,0.8);
 }
 
 .hero h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 5.5rem;
+    font-size: 6.3rem;
+    font-weight: 700;
     color: #b8860b;
     line-height: 1;
+
+    text-shadow:
+        0 2px 4px rgba(255,255,255,0.9),
+        0 4px 10px rgba(0,0,0,0.16);
 }
 
-.hero p {
-    font-size: 1.4rem;
-    margin-top: 14px;
+.hero .sub-line {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #4a3308;
+    margin-top: 12px;
+
+    text-shadow: 0 2px 5px rgba(255,255,255,0.8);
 }
 
 .hero .name {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #2f2108;
+    margin-top: 24px;
+    line-height: 1.15;
+
+    text-shadow: 0 2px 6px rgba(255,255,255,0.9);
+}
+
+.hero .date-line {
+    font-size: 1.8rem;
     font-weight: 700;
+    color: #4a3308;
     margin-top: 22px;
+
+    text-shadow: 0 2px 5px rgba(255,255,255,0.85);
 }
 
 /* Sections */
 
 .section {
-    padding: 55px 20px;
+    padding: 50px 20px;
     max-width: 1200px;
     margin: auto;
 }
@@ -108,19 +183,21 @@ body {
     font-size: 2.8rem;
     color: #b8860b;
     margin-bottom: 35px;
+
+    text-shadow: 0 2px 5px rgba(255,255,255,0.8);
 }
 
-/* Single Photo */
+/* Single Blessing Photo - Reduced Size */
 
 .single-photo-box {
-    max-width: 850px;
+    max-width: 520px;
     margin: auto;
     overflow: hidden;
 
-    border-radius: 25px;
+    border-radius: 24px;
     box-shadow: 0 10px 35px rgba(0,0,0,.18);
 
-    background: rgba(255,255,255,.75);
+    background: rgba(255,255,255,.78);
     padding: 10px;
 }
 
@@ -130,7 +207,120 @@ body {
     border-radius: 18px;
 }
 
-/* Countdown */
+/* Event Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.84);
+
+    padding: 32px 24px;
+    border-radius: 22px;
+
+    text-align: center;
+    box-shadow: 0 8px 22px rgba(0,0,0,.12);
+    backdrop-filter: blur(2px);
+}
+
+.card h3 {
+    color: #b8860b;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    font-size: 1.65rem;
+    color: #2f2108;
+}
+
+.card p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.map-btn {
+    display: inline-block;
+    margin-top: 18px;
+
+    padding: 12px 24px;
+
+    background: #b8860b;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.05rem;
+    font-weight: 600;
+
+    box-shadow: 0 6px 14px rgba(0,0,0,.16);
+}
+
+.map-btn:hover {
+    background: #9d7208;
+}
+
+/* Blessing Text */
+
+.blessing {
+    max-width: 760px;
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0.78);
+    padding: 34px 28px;
+    border-radius: 24px;
+
+    text-align: center;
+    font-size: 1.55rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.8;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+/* Footer */
+
+.footer {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: inline-block;
+
+    background: rgba(255, 255, 255, 0.76);
+    padding: 32px 34px;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.14);
+}
+
+.footer h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.8rem;
+    color: #b8860b;
+}
+
+.footer p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #2f2108;
+}
+
+/* Countdown - Now at End */
+
+.countdown-section {
+    padding: 35px 20px 70px;
+    max-width: 1200px;
+    margin: auto;
+}
 
 .countdown {
     display: flex;
@@ -148,7 +338,10 @@ body {
     width: 110px;
 
     text-align: center;
-    box-shadow: 0 8px 18px rgba(0,0,0,.14);
+    box-shadow: 0 8px 18px rgba(0,0,0,.16);
+
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .time-box span {
@@ -157,111 +350,16 @@ body {
     display: block;
 }
 
-/* Event Cards */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-    gap: 20px;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.86);
-
-    padding: 30px;
-    border-radius: 20px;
-
-    text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,.10);
-}
-
-.card h3 {
-    color: #b8860b;
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-}
-
-.card h2 {
-    margin-bottom: 10px;
-    font-size: 1.6rem;
-}
-
-.card p {
-    font-size: 1.15rem;
-    line-height: 1.5;
-}
-
-.map-btn {
-    display: inline-block;
-    margin-top: 15px;
-
-    padding: 12px 24px;
-
-    background: #b8860b;
-    color: white;
-
-    text-decoration: none;
-    border-radius: 30px;
-
-    box-shadow: 0 6px 14px rgba(0,0,0,.14);
-}
-
-.map-btn:hover {
-    background: #9d7208;
-}
-
-/* Blessing */
-
-.blessing {
-    max-width: 700px;
-    margin: auto;
-
-    text-align: center;
-    font-size: 1.4rem;
-    font-style: italic;
-    line-height: 1.8;
-
-    background: rgba(255,255,255,.75);
-    padding: 35px 25px;
-    border-radius: 22px;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,.10);
-}
-
-/* Footer */
-
-.footer {
-    padding: 60px 20px;
-    text-align: center;
-
-    background: rgba(245, 236, 213, 0.82);
-}
-
-.footer h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3.5rem;
-    color: #b8860b;
-}
-
-.footer p {
-    font-size: 1.8rem;
-    margin-top: 10px;
-}
-
 /* Mobile */
 
-@media(max-width: 768px) {
+@media(max-width:768px) {
 
     body {
         background-attachment: scroll;
-        background-size: cover;
-        background-position: center center;
     }
 
-    #welcomeScreen {
-        background-size: cover;
-        background-position: center center;
+    .welcome-content {
+        padding: 32px 20px;
     }
 
     .welcome-content h1 {
@@ -273,44 +371,80 @@ body {
     }
 
     .hero {
-        padding: 55px 18px 40px;
+        padding: 55px 14px 40px;
+    }
+
+    .hero-content {
+        padding: 28px 18px;
+        border-radius: 22px;
     }
 
     .hero .welcome-line {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .hero h1 {
-        font-size: 4rem;
+        font-size: 4.4rem;
+    }
+
+    .hero .sub-line {
+        font-size: 1.55rem;
     }
 
     .hero .name {
-        font-size: 2.2rem;
+        font-size: 2.35rem;
     }
 
-    .hero p {
-        font-size: 1.2rem;
+    .hero .date-line {
+        font-size: 1.35rem;
+    }
+
+    .section {
+        padding: 42px 16px;
     }
 
     .section-title {
         font-size: 2.2rem;
     }
 
-    .time-box {
-        width: 90px;
-        padding: 16px 10px;
+    .single-photo-box {
+        max-width: 330px;
+        border-radius: 20px;
     }
 
-    .time-box span {
-        font-size: 1.6rem;
+    .card {
+        padding: 28px 20px;
+    }
+
+    .card h2 {
+        font-size: 1.45rem;
+    }
+
+    .card p {
+        font-size: 1.1rem;
+    }
+
+    .blessing {
+        font-size: 1.3rem;
+        padding: 28px 20px;
     }
 
     .footer h2 {
-        font-size: 3rem;
+        font-size: 3.1rem;
     }
 
     .footer p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .time-box {
+        width: 90px;
+        padding: 16px 10px;
+        font-size: 0.95rem;
+    }
+
+    .time-box span {
+        font-size: 1.7rem;
     }
 }
 
@@ -339,37 +473,90 @@ body {
 
 <!-- Hero Section -->
 <section class="hero">
-    <div class="welcome-line">Welcome to</div>
+    <div class="hero-content">
+        <div class="welcome-line">Welcome to the</div>
 
-    <h1>Baptism</h1>
+        <h1>Baptism</h1>
 
-    <p>of our beloved son</p>
+        <div class="sub-line">of our beloved son</div>
 
-    <div class="name">
-        Vinsen Vindhu Varkichen
+        <div class="name">Vinsen Vindhu Varkichen</div>
+
+        <div class="date-line">July 4, 2026 • 11:00 AM</div>
     </div>
-
-    <p style="margin-top:20px;">
-        July 4, 2026 • 11:00 AM
-    </p>
 </section>
 
 <!-- Single Photo Section -->
 <section class="section">
-    <h2 class="section-title">
-        Our Little Blessing
-    </h2>
+    <h2 class="section-title">Our Little Blessing</h2>
 
     <div class="single-photo-box">
         <img src="photos/blessing.jpg" alt="Vinsen Vindhu Varkichen">
     </div>
 </section>
 
-<!-- Countdown Section -->
+<!-- Event Details -->
 <section class="section">
-    <h2 class="section-title">
-        Countdown
-    </h2>
+    <h2 class="section-title">Event Details</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Date & Time</h3>
+            <h2>July 4, 2026</h2>
+            <p>Saturday</p>
+            <p>11:00 AM</p>
+        </div>
+
+        <div class="card">
+            <h3>Church</h3>
+            <h2>St Mary's Forane Church</h2>
+            <p>Athirampuzha, Cheriyapally</p>
+
+            <a class="map-btn" href="https://maps.app.goo.gl/xepn4a7civ5ENGD49" target="_blank">
+                Open Google Maps
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Reception</h3>
+            <h2>Santhome Enclave</h2>
+            <p>
+                Opposite to St Sebastian Convention Centre A/C,<br>
+                Athirampuzha
+            </p>
+
+            <a class="map-btn" href="https://maps.app.goo.gl/BihNZrKRBfAbvtFN6" target="_blank">
+                Open Google Maps
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Blessing Text -->
+<section class="section">
+    <h2 class="section-title">A Blessing</h2>
+
+    <div class="blessing">
+        "Children are a heritage from the Lord,<br>
+        offspring a reward from Him."
+        <br><br>
+        Psalm 127:3
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <div class="footer-content">
+        <h2>With Love</h2>
+        <p>Joms &amp; Vindhuja</p>
+    </div>
+</section>
+
+<!-- Countdown moved to the end -->
+<section class="countdown-section">
+    <h2 class="section-title">Countdown</h2>
 
     <div class="countdown">
         <div class="time-box">
@@ -394,81 +581,18 @@ body {
     </div>
 </section>
 
-<!-- Event Details Section -->
-<section class="section">
-    <h2 class="section-title">
-        Event Details
-    </h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Date & Time</h3>
-            <h2>July 4, 2026</h2>
-            <p>Saturday</p>
-            <p>11:00 AM</p>
-        </div>
-
-        <div class="card">
-            <h3>Church</h3>
-            <h2>St Mary's Forane Church</h2>
-            <p>Athirampuzha</p>
-            <p>Cheriyapally</p>
-
-            <a class="map-btn" href="https://maps.app.goo.gl/xepn4a7civ5ENGD49" target="_blank">
-                Open Google Maps
-            </a>
-        </div>
-
-        <div class="card">
-            <h3>Reception</h3>
-            <h2>Santhome Enclave</h2>
-            <p>
-                Opposite to St Sebastian Convention Centre A/C,
-                Athirampuzha
-            </p>
-
-            <a class="map-btn" href="https://maps.app.goo.gl/BihNZrKRBfAbvtFN6" target="_blank">
-                Open Google Maps
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<!-- Blessing Section -->
-<section class="section">
-    <h2 class="section-title">
-        A Blessing
-    </h2>
-
-    <div class="blessing">
-        "Children are a heritage from the Lord,<br>
-        offspring a reward from Him."
-        <br><br>
-        Psalm 127:3
-    </div>
-</section>
-
-<!-- Footer -->
-<section class="footer">
-    <h2>With Love</h2>
-    <p>Joms & Vindhuja</p>
-</section>
-
 <script>
 
 function openInvitation() {
-    const welcomeScreen = document.getElementById("welcomeScreen");
+    document.getElementById("welcomeScreen").style.display = "none";
+
     const music = document.getElementById("bgMusic");
 
-    welcomeScreen.style.display = "none";
-
     music.volume = 0.8;
-    music.currentTime = 0;
+    music.load();
 
     music.play().catch(function(error) {
-        console.log("Music could not start:", error);
+        console.log("Music could not start automatically:", error);
     });
 }
 
