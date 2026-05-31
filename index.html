@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baptism Invitation | Vinsen Vindhu Varkichen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Cormorant Garamond', serif;
+    background:#fdf7ea;
+    color:#3d2d14;
+    overflow-x:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(
+        rgba(255,248,230,.85),
+        rgba(255,248,230,.95)
+    ),
+    url('https://images.unsplash.com/photo-1513151233558-d860c5398176');
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero img{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid #c79a35;
+    box-shadow:0 0 40px rgba(199,154,53,.4);
+}
+
+.subtitle{
+    margin-top:30px;
+    letter-spacing:3px;
+    font-size:20px;
+}
+
+.baptism{
+    font-family:'Great Vibes', cursive;
+    font-size:100px;
+    color:#b8860b;
+    margin:15px 0;
+}
+
+.name{
+    font-size:58px;
+    font-weight:700;
+    margin-top:20px;
+}
+
+.section{
+    padding:80px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:48px;
+    color:#b8860b;
+    margin-bottom:50px;
+}
+
+.details{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.card h3{
+    color:#b8860b;
+    margin-bottom:15px;
+    font-size:30px;
+}
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.time-box{
+    background:#b8860b;
+    color:white;
+    width:120px;
+    padding:25px;
+    border-radius:15px;
+}
+
+.time-box span{
+    font-size:40px;
+    font-weight:bold;
+}
+
+.location-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    background:#b8860b;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-size:18px;
+}
+
+.footer{
+    text-align:center;
+    padding:60px 20px;
+    background:#f6edd5;
+}
+
+.footer h2{
+    font-family:'Great Vibes', cursive;
+    font-size:60px;
+    color:#b8860b;
+}
+
+.parents{
+    font-size:34px;
+    margin-top:15px;
+}
+
+.verse{
+    max-width:800px;
+    margin:20px auto;
+    font-style:italic;
+    font-size:24px;
+}
+
+@media(max-width:768px){
+
+.baptism{
+    font-size:70px;
+}
+
+.name{
+    font-size:42px;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
+}
+
+.section-title{
+    font-size:36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<img src="baby.jpg" alt="Vinsen">
+
+<div class="subtitle">
+PLEASE JOIN US FOR THE
+</div>
+
+<div class="baptism">
+Baptism
+</div>
+
+<div style="font-size:28px;">
+of our beloved son
+</div>
+
+<div class="name">
+Vinsen Vindhu Varkichen
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Countdown to the Blessed Day
+</h2>
+
+<div class="countdown">
+
+<div class="time-box">
+<span id="days">0</span>
+<div>Days</div>
+</div>
+
+<div class="time-box">
+<span id="hours">0</span>
+<div>Hours</div>
+</div>
+
+<div class="time-box">
+<span id="minutes">0</span>
+<div>Minutes</div>
+</div>
+
+<div class="time-box">
+<span id="seconds">0</span>
+<div>Seconds</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Event Details
+</h2>
+
+<div class="details">
+
+<div class="card">
+<h3>Date & Time</h3>
+<p style="font-size:34px;">
+July 4, 2026
+</p>
+<p style="font-size:28px;">
+Saturday
+</p>
+<p style="font-size:28px;">
+11:00 AM
+</p>
+</div>
+
+<div class="card">
+<h3>Church</h3>
+<p style="font-size:30px;">
+St Mary's Forane Church
+</p>
+<p style="font-size:24px;">
+Athirampuzha (Cheriyapally)
+</p>
+</div>
+
+<div class="card">
+<h3>Reception</h3>
+<p style="font-size:28px;">
+Santhome Enclave
+</p>
+<p>
+Opposite to St Sebastian Convention Centre A/C,
+Athirampuzha
+</p>
+
+<a class="location-btn"
+href="https://maps.app.goo.gl/zGQNfq8KEDCYjVnV6?g_st=ic"
+target="_blank">
+Open Google Maps
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+A Blessing
+</h2>
+
+<div class="verse">
+"Children are a heritage from the Lord,
+offspring a reward from Him."
+<br><br>
+Psalm 127:3
+</div>
+
+</section>
+
+<section class="footer">
+
+<h2>
+With Love
+</h2>
+
+<div class="parents">
+Joms & Vindhuja
+</div>
+
+</section>
+
+<script>
+
+const baptismDate =
+new Date("July 4, 2026 11:00:00").getTime();
+
+setInterval(() => {
+
+const now = new Date().getTime();
+const distance = baptismDate - now;
+
+document.getElementById("days").innerHTML =
+Math.floor(distance / (1000*60*60*24));
+
+document.getElementById("hours").innerHTML =
+Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+
+document.getElementById("minutes").innerHTML =
+Math.floor((distance % (1000*60*60)) / (1000*60));
+
+document.getElementById("seconds").innerHTML =
+Math.floor((distance % (1000*60)) / 1000);
+
+},1000);
+
+</script>
+
+</body>
+</html>
