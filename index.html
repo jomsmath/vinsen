@@ -340,4 +340,173 @@ body {
         Vinsen Vindhu Varkichen
     </div>
 
-    <p style="margin-top:20p
+    <p style="margin-top:20px;">
+        July 4, 2026 • 11:00 AM
+    </p>
+</section>
+
+<section class="section">
+    <h2 class="section-title">
+        Our Little Blessing
+    </h2>
+
+    <div class="single-photo-box">
+        <img src="photos/blessing.jpg" alt="Vinsen">
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">
+        Countdown
+    </h2>
+
+    <div class="countdown">
+        <div class="time-box">
+            <span id="days">0</span>
+            Days
+        </div>
+
+        <div class="time-box">
+            <span id="hours">0</span>
+            Hours
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">0</span>
+            Minutes
+        </div>
+
+        <div class="time-box">
+            <span id="seconds">0</span>
+            Seconds
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">
+        Event Details
+    </h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Date & Time</h3>
+            <h2>July 4, 2026</h2>
+            <p>Saturday</p>
+            <p>11:00 AM</p>
+        </div>
+
+        <div class="card">
+            <h3>Church</h3>
+            <h2>St Mary's Forane Church</h2>
+            <p>Athirampuzha, Cheriyapally</p>
+
+            <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=St+Marys+Forane+Church+Athirampuzha" target="_blank">
+                Open Google Maps
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Reception</h3>
+            <h2>Santhome Enclave</h2>
+            <p>
+                Opposite to St Sebastian Convention Centre A/C,<br>
+                Athirampuzha
+            </p>
+
+            <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Santhome+Enclave+Athirampuzha" target="_blank">
+                Open Google Maps
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">
+        A Blessing
+    </h2>
+
+    <div class="blessing">
+        "Children are a heritage from the Lord,<br>
+        offspring a reward from Him."
+        <br><br>
+        Psalm 127:3
+    </div>
+</section>
+
+<section class="footer">
+    <h2>With Love</h2>
+    <p>Joms & Vindhuja</p>
+</section>
+
+<script>
+function openInvitation() {
+    document.getElementById("welcomeScreen").style.display = "none";
+
+    const music = document.getElementById("bgMusic");
+    const musicBtn = document.getElementById("musicBtn");
+
+    music.volume = 0.8;
+
+    music.play()
+        .then(() => {
+            musicBtn.style.display = "block";
+            musicBtn.innerHTML = "Pause Music";
+        })
+        .catch(() => {
+            musicBtn.style.display = "block";
+            musicBtn.innerHTML = "Play Music";
+        });
+}
+
+function toggleMusic() {
+    const music = document.getElementById("bgMusic");
+    const musicBtn = document.getElementById("musicBtn");
+
+    if (music.paused) {
+        music.play()
+            .then(() => {
+                musicBtn.innerHTML = "Pause Music";
+            })
+            .catch(() => {
+                alert("Music could not play. Please check music.mp3 file.");
+            });
+    } else {
+        music.pause();
+        musicBtn.innerHTML = "Play Music";
+    }
+}
+
+const targetDate = new Date("July 4, 2026 11:00:00").getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+        document.getElementById("days").innerHTML = 0;
+        document.getElementById("hours").innerHTML = 0;
+        document.getElementById("minutes").innerHTML = 0;
+        document.getElementById("seconds").innerHTML = 0;
+        return;
+    }
+
+    document.getElementById("days").innerHTML =
+        Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    document.getElementById("hours").innerHTML =
+        Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    document.getElementById("minutes").innerHTML =
+        Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    document.getElementById("seconds").innerHTML =
+        Math.floor((distance % (1000 * 60)) / 1000);
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
