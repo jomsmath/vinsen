@@ -3,29 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Baptism Invitation | Vinsen Vindhu Varkichen</title>
+<title>Baptism Invitation | Vinsen Viu Varkichen</title>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     font-family: 'Cormorant Garamond', serif;
     color: #3a2a0c;
     overflow-x: hidden;
-
     background-image:
         linear-gradient(rgba(252, 247, 236, 0.45), rgba(252, 247, 236, 0.45)),
         url("background.png");
-
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -33,25 +25,20 @@ body {
     background-color: #fcf7ec;
 }
 
-/* ── Welcome Screen ── */
-
+/* Welcome Screen */
 #welcomeScreen {
     position: fixed;
     inset: 0;
-
     background:
         linear-gradient(rgba(255, 248, 223, 0.50), rgba(245, 227, 176, 0.50)),
         url("background.png");
-
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-color: #fff8df;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     z-index: 9999;
     padding: 20px;
 }
@@ -60,6 +47,7 @@ body {
     text-align: center;
     max-width: 520px;
     padding: 38px 28px;
+    /* NO background, NO box-shadow */
 }
 
 .welcome-content h1 {
@@ -67,9 +55,9 @@ body {
     font-size: 4rem;
     color: #b8860b;
     margin-bottom: 15px;
-
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
+        0 0 8px rgba(255,255,255,1),
+        0 0 18px rgba(255,255,255,0.9),
         0 4px 14px rgba(0,0,0,0.30);
 }
 
@@ -78,9 +66,9 @@ body {
     font-weight: 700;
     margin-bottom: 30px;
     color: #2f2108;
-
     text-shadow:
-        0 1px 4px rgba(255,255,255,0.95),
+        0 0 6px rgba(255,255,255,1),
+        0 0 14px rgba(255,255,255,0.85),
         0 2px 8px rgba(0,0,0,0.22);
 }
 
@@ -88,23 +76,17 @@ body {
     padding: 16px 42px;
     border: none;
     border-radius: 50px;
-
     background: #b8860b;
     color: white;
-
     font-size: 1.15rem;
     font-weight: 600;
     cursor: pointer;
-
     box-shadow: 0 8px 18px rgba(0,0,0,.28);
 }
 
-.open-btn:hover {
-    background: #9d7208;
-}
+.open-btn:hover { background: #9d7208; }
 
-/* ── Hero Section ── */
-
+/* Hero */
 .hero {
     padding: 80px 20px 60px;
     text-align: center;
@@ -114,6 +96,7 @@ body {
     display: inline-block;
     max-width: 900px;
     padding: 35px 28px;
+    /* NO background, NO box-shadow */
 }
 
 .hero .welcome-line {
@@ -121,10 +104,10 @@ body {
     font-weight: 700;
     color: #4a3308;
     margin-bottom: 8px;
-
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 3px 12px rgba(0,0,0,0.25);
+        0 0 8px rgba(255,255,255,1),
+        0 0 20px rgba(255,255,255,0.9),
+        0 3px 12px rgba(0,0,0,0.28);
 }
 
 .hero h1 {
@@ -133,10 +116,10 @@ body {
     font-weight: 700;
     color: #b8860b;
     line-height: 1;
-
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 4px 16px rgba(0,0,0,0.30);
+        0 0 10px rgba(255,255,255,1),
+        0 0 24px rgba(255,255,255,0.9),
+        0 4px 16px rgba(0,0,0,0.32);
 }
 
 .hero .sub-line {
@@ -144,10 +127,10 @@ body {
     font-weight: 700;
     color: #4a3308;
     margin-top: 12px;
-
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 3px 12px rgba(0,0,0,0.25);
+        0 0 8px rgba(255,255,255,1),
+        0 0 20px rgba(255,255,255,0.9),
+        0 3px 12px rgba(0,0,0,0.28);
 }
 
 .hero .name {
@@ -156,10 +139,10 @@ body {
     color: #2f2108;
     margin-top: 24px;
     line-height: 1.15;
-
     text-shadow:
-        0 2px 8px rgba(255,255,255,0.95),
-        0 4px 14px rgba(0,0,0,0.28);
+        0 0 10px rgba(255,255,255,1),
+        0 0 22px rgba(255,255,255,0.9),
+        0 4px 14px rgba(0,0,0,0.30);
 }
 
 .hero .date-line {
@@ -167,14 +150,13 @@ body {
     font-weight: 700;
     color: #4a3308;
     margin-top: 22px;
-
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 3px 12px rgba(0,0,0,0.25);
+        0 0 8px rgba(255,255,255,1),
+        0 0 20px rgba(255,255,255,0.9),
+        0 3px 12px rgba(0,0,0,0.28);
 }
 
-/* ── Sections ── */
-
+/* Sections */
 .section {
     padding: 50px 20px;
     max-width: 1200px;
@@ -186,21 +168,21 @@ body {
     font-size: 2.8rem;
     color: #b8860b;
     margin-bottom: 35px;
-
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 4px 14px rgba(0,0,0,0.28);
+        0 0 10px rgba(255,255,255,1),
+        0 0 22px rgba(255,255,255,0.9),
+        0 4px 14px rgba(0,0,0,0.30);
 }
 
-/* ── Single Blessing Photo ── */
-
+/* Photo Box */
 .single-photo-box {
     max-width: 520px;
     margin: auto;
     overflow: hidden;
     border-radius: 24px;
-    box-shadow: 0 10px 35px rgba(0,0,0,.22);
+    box-shadow: 0 10px 35px rgba(0,0,0,.25);
     padding: 10px;
+    /* NO background */
 }
 
 .single-photo-box img {
@@ -209,8 +191,7 @@ body {
     border-radius: 18px;
 }
 
-/* ── Event Cards ── */
-
+/* Event Cards */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -221,27 +202,27 @@ body {
     padding: 32px 24px;
     border-radius: 22px;
     text-align: center;
-    backdrop-filter: blur(2px);
+    /* NO background, NO box-shadow, NO backdrop-filter */
 }
 
 .card h3 {
     color: #b8860b;
     margin-bottom: 15px;
     font-size: 1.6rem;
-
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 3px 10px rgba(0,0,0,0.22);
+        0 0 8px rgba(255,255,255,1),
+        0 0 18px rgba(255,255,255,0.9),
+        0 3px 10px rgba(0,0,0,0.28);
 }
 
 .card h2 {
     margin-bottom: 12px;
     font-size: 1.65rem;
     color: #2f2108;
-
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 3px 10px rgba(0,0,0,0.22);
+        0 0 8px rgba(255,255,255,1),
+        0 0 18px rgba(255,255,255,0.9),
+        0 3px 10px rgba(0,0,0,0.28);
 }
 
 .card p {
@@ -249,10 +230,10 @@ body {
     line-height: 1.5;
     font-weight: 600;
     color: #3a2a0c;
-
     text-shadow:
-        0 1px 4px rgba(255,255,255,0.90),
-        0 2px 8px rgba(0,0,0,0.18);
+        0 0 6px rgba(255,255,255,1),
+        0 0 14px rgba(255,255,255,0.85),
+        0 2px 8px rgba(0,0,0,0.22);
 }
 
 .map-btn {
@@ -265,15 +246,12 @@ body {
     border-radius: 30px;
     font-size: 1.05rem;
     font-weight: 600;
-    box-shadow: 0 6px 14px rgba(0,0,0,.20);
+    box-shadow: 0 6px 14px rgba(0,0,0,.22);
 }
 
-.map-btn:hover {
-    background: #9d7208;
-}
+.map-btn:hover { background: #9d7208; }
 
-/* ── Blessing Text ── */
-
+/* Blessing */
 .blessing {
     max-width: 760px;
     margin: auto;
@@ -284,14 +262,14 @@ body {
     font-weight: 600;
     line-height: 1.8;
     color: #2f2108;
-
+    /* NO background, NO box-shadow */
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 3px 12px rgba(0,0,0,0.22);
+        0 0 10px rgba(255,255,255,1),
+        0 0 22px rgba(255,255,255,0.9),
+        0 3px 12px rgba(0,0,0,0.28);
 }
 
-/* ── Footer ── */
-
+/* Footer */
 .footer {
     padding: 55px 20px;
     text-align: center;
@@ -300,16 +278,17 @@ body {
 .footer-content {
     display: inline-block;
     padding: 32px 34px;
+    /* NO background, NO box-shadow */
 }
 
 .footer h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 3.8rem;
     color: #b8860b;
-
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 4px 14px rgba(0,0,0,0.28);
+        0 0 10px rgba(255,255,255,1),
+        0 0 24px rgba(255,255,255,0.9),
+        0 4px 14px rgba(0,0,0,0.32);
 }
 
 .footer p {
@@ -317,29 +296,17 @@ body {
     font-weight: 700;
     margin-top: 10px;
     color: #2f2108;
-
     text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 3px 12px rgba(0,0,0,0.25);
+        0 0 8px rgba(255,255,255,1),
+        0 0 20px rgba(255,255,255,0.9),
+        0 3px 12px rgba(0,0,0,0.28);
 }
 
-/* ── Countdown ── */
-
+/* Countdown */
 .countdown-section {
     padding: 35px 20px 70px;
     max-width: 1200px;
     margin: auto;
-}
-
-.countdown-section .section-title {
-    text-align: center;
-    font-size: 2.8rem;
-    color: #b8860b;
-    margin-bottom: 35px;
-
-    text-shadow:
-        0 2px 6px rgba(255,255,255,0.95),
-        0 4px 14px rgba(0,0,0,0.28);
 }
 
 .countdown {
@@ -356,7 +323,7 @@ body {
     border-radius: 15px;
     width: 110px;
     text-align: center;
-    box-shadow: 0 8px 18px rgba(0,0,0,.20);
+    box-shadow: 0 8px 18px rgba(0,0,0,.22);
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -367,101 +334,39 @@ body {
     display: block;
 }
 
-/* ── Mobile ── */
-
+/* Mobile */
 @media(max-width:768px) {
 
-    body {
-        background-attachment: scroll;
-    }
+    body { background-attachment: scroll; }
 
-    .welcome-content {
-        padding: 32px 20px;
-    }
+    .welcome-content { padding: 32px 20px; }
+    .welcome-content h1 { font-size: 3rem; }
+    .welcome-content p { font-size: 1.15rem; }
 
-    .welcome-content h1 {
-        font-size: 3rem;
-    }
+    .hero { padding: 55px 14px 40px; }
+    .hero-content { padding: 28px 18px; }
+    .hero .welcome-line { font-size: 1.8rem; }
+    .hero h1 { font-size: 4.4rem; }
+    .hero .sub-line { font-size: 1.55rem; }
+    .hero .name { font-size: 2.35rem; }
+    .hero .date-line { font-size: 1.35rem; }
 
-    .welcome-content p {
-        font-size: 1.15rem;
-    }
+    .section { padding: 42px 16px; }
+    .section-title { font-size: 2.2rem; }
 
-    .hero {
-        padding: 55px 14px 40px;
-    }
+    .single-photo-box { max-width: 330px; border-radius: 20px; }
 
-    .hero-content {
-        padding: 28px 18px;
-    }
+    .card { padding: 28px 20px; }
+    .card h2 { font-size: 1.45rem; }
+    .card p { font-size: 1.1rem; }
 
-    .hero .welcome-line {
-        font-size: 1.8rem;
-    }
+    .blessing { font-size: 1.3rem; padding: 28px 20px; }
 
-    .hero h1 {
-        font-size: 4.4rem;
-    }
+    .footer h2 { font-size: 3.1rem; }
+    .footer p { font-size: 1.6rem; }
 
-    .hero .sub-line {
-        font-size: 1.55rem;
-    }
-
-    .hero .name {
-        font-size: 2.35rem;
-    }
-
-    .hero .date-line {
-        font-size: 1.35rem;
-    }
-
-    .section {
-        padding: 42px 16px;
-    }
-
-    .section-title {
-        font-size: 2.2rem;
-    }
-
-    .single-photo-box {
-        max-width: 330px;
-        border-radius: 20px;
-    }
-
-    .card {
-        padding: 28px 20px;
-    }
-
-    .card h2 {
-        font-size: 1.45rem;
-    }
-
-    .card p {
-        font-size: 1.1rem;
-    }
-
-    .blessing {
-        font-size: 1.3rem;
-        padding: 28px 20px;
-    }
-
-    .footer h2 {
-        font-size: 3.1rem;
-    }
-
-    .footer p {
-        font-size: 1.6rem;
-    }
-
-    .time-box {
-        width: 90px;
-        padding: 16px 10px;
-        font-size: 0.95rem;
-    }
-
-    .time-box span {
-        font-size: 1.7rem;
-    }
+    .time-box { width: 90px; padding: 16px 10px; font-size: 0.95rem; }
+    .time-box span { font-size: 1.7rem; }
 }
 
 </style>
@@ -480,24 +385,24 @@ body {
     </div>
 </div>
 
-<!-- Background Music (plays once, no loop) -->
+<!-- Background Music — loop removed, plays once -->
 <audio id="bgMusic" preload="auto">
     <source src="./music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="hero">
     <div class="hero-content">
         <div class="welcome-line">Welcome to the</div>
         <h1>Baptism</h1>
         <div class="sub-line">of our beloved son</div>
         <div class="name">Vinsen Vindhu Varkichen</div>
-        <div class="date-line">July 4, 2026 &bull; 11:00 AM</div>
+        <div class="date-line">July 4, 2026 • 11:00 AM</div>
     </div>
 </section>
 
-<!-- Single Photo Section -->
+<!-- Photo -->
 <section class="section">
     <h2 class="section-title">Our Little Blessing</h2>
     <div class="single-photo-box">
@@ -529,10 +434,7 @@ body {
         <div class="card">
             <h3>Reception</h3>
             <h2>Santhome Enclave</h2>
-            <p>
-                Opposite to St Sebastian Convention Centre A/C,<br>
-                Athirampuzha
-            </p>
+            <p>Opposite to St Sebastian Convention Centre A/C,<br>Athirampuzha</p>
             <a class="map-btn" href="https://maps.app.goo.gl/BihNZrKRBfAbvtFN6" target="_blank">
                 Open Google Maps
             </a>
@@ -541,12 +443,12 @@ body {
     </div>
 </section>
 
-<!-- Blessing Text -->
+<!-- Blessing Quote -->
 <section class="section">
     <h2 class="section-title">A Blessing</h2>
     <div class="blessing">
-        &ldquo;Children are a heritage from the Lord,<br>
-        offspring a reward from Him.&rdquo;
+        "Children are a heritage from the Lord,<br>
+        offspring a reward from Him."
         <br><br>
         Psalm 127:3
     </div>
@@ -564,22 +466,10 @@ body {
 <section class="countdown-section">
     <h2 class="section-title">Countdown</h2>
     <div class="countdown">
-        <div class="time-box">
-            <span id="days">0</span>
-            Days
-        </div>
-        <div class="time-box">
-            <span id="hours">0</span>
-            Hours
-        </div>
-        <div class="time-box">
-            <span id="minutes">0</span>
-            Minutes
-        </div>
-        <div class="time-box">
-            <span id="seconds">0</span>
-            Seconds
-        </div>
+        <div class="time-box"><span id="days">0</span>Days</div>
+        <div class="time-box"><span id="hours">0</span>Hours</div>
+        <div class="time-box"><span id="minutes">0</span>Minutes</div>
+        <div class="time-box"><span id="seconds">0</span>Seconds</div>
     </div>
 </section>
 
@@ -587,7 +477,6 @@ body {
 
 function openInvitation() {
     document.getElementById("welcomeScreen").style.display = "none";
-
     const music = document.getElementById("bgMusic");
     music.volume = 0.8;
     music.load();
@@ -612,13 +501,10 @@ function updateCountdown() {
 
     document.getElementById("days").innerHTML =
         Math.floor(distance / (1000 * 60 * 60 * 24));
-
     document.getElementById("hours").innerHTML =
         Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
     document.getElementById("minutes").innerHTML =
         Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
     document.getElementById("seconds").innerHTML =
         Math.floor((distance % (1000 * 60)) / 1000);
 }
